@@ -14,7 +14,6 @@ const cors = require('@koa/cors');
 if (app.env === 'development') {
   app.proxy = true
 }
-// app.use(cors
 
 var whitelist = ['http://example1.com', 'http://example2.com']
 var corsOptions = {
@@ -26,7 +25,9 @@ var corsOptions = {
     }
   }
 }
-// app.use(cors());
+app.use(cors(
+  {origin : "*" }
+));
 app.use(errorHandler())
 app.use(helmet())
 app.use(bodyParser())
