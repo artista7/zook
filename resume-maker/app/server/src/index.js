@@ -14,7 +14,10 @@ const cors = require('@koa/cors');
 if (app.env === 'development') {
   app.proxy = true
 }
-app.use(cors())
+// app.use(cors())
+app.use(cors({
+  origin: 'https://dev.d3aml3uiqnzcoh.amplifyapp.com'
+}));
 app.use(errorHandler())
 app.use(helmet())
 app.use(bodyParser())
