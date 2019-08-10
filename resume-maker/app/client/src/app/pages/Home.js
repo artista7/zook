@@ -69,7 +69,7 @@ const Button = styled(Link)`
   &:hover {
     background: linear-gradient(
       40deg,
-      ${darken(0.5, colors.primary)},
+      ${darken(0.35, colors.primary)},
       ${darken(0.3, colors.primary)}
     );
     animation: none;
@@ -91,14 +91,14 @@ const PrimaryButton = Button.extend`
   margin-top: 15px;
   background: linear-gradient(
     40deg,
-    ${darken(0.3, colors.primary)},
+    ${darken(0.2, colors.primary)},
     ${colors.primary}
   );
 
   &:hover {
     background: linear-gradient(
       40deg,
-      ${darken(0.4, colors.primary)},
+      ${darken(0.3, colors.primary)},
       ${colors.primary}
     );
   }
@@ -321,14 +321,7 @@ class Home extends Component<Props> {
           </RightSection>
         </Main>
         <Footer>
-          <Copyright>© 2018 Saad Quadri</Copyright>
-          <Links>
-            <Link to="/about">About</Link>
-            <a href="https://github.com/saadq/resumake">Source</a>
-            <a href="https://github.com/saadq/resumake/issues">Issues</a>
-            <a href="mailto:saad@saadq.com">Contact</a>
-            <a href="https://www.paypal.me/saadquadri">Donate</a>
-          </Links>
+          <Copyright>Thanks to Resumake</Copyright>          
         </Footer>
       </Wrapper>
     )

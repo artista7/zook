@@ -5,9 +5,10 @@
 import { keyframes } from 'styled-components'
 
 const colors = {
-  background: '#14171d',
+  background: '#10321f',
   foreground: '#c0c5ce',
-  primary: '#56c9aa',
+  primary: '#20B2AA',
+  secondary: '#8FBC8F',
   borders: '#202530',
   error: '#c95757'
 }

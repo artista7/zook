@@ -9,7 +9,7 @@ import { colors } from '../theme'
 
 const Text = styled.h1`
   font-family: NexaBold;
-  font-size: ${props => (props.big ? 4 : 2.5)}em;
+  font-size: ${props => (props.big ? 6 : 2.5)}em;
   margin: 0;
 `
 
@@ -19,9 +19,13 @@ const StyledLink = styled(Link)`
   color: white;
 `
 
-const Accent = styled.em`
+const Accent1 = styled.em`
   font-style: normal;
   color: ${colors.primary};
+`
+const Accent2 = styled.em`
+  font-style: normal;
+  color: ${colors.secondary};
 `
 
 type Props = {
@@ -32,7 +36,7 @@ function Logo({ big }: Props) {
   return (
     <Text big={big}>
       <StyledLink to="/">
-        resu<Accent>make</Accent>
+        <Accent1>Zo</Accent1><Accent2>ok</Accent2>
       </StyledLink>
     </Text>
   )
